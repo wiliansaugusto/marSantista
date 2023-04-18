@@ -1,0 +1,10 @@
+.imgLogo{
+    width: 130px;
+    height: 100%;
+}
+mat-expansion-panel-header{
+    display: inline-block;
+    flex-direction: row;
+    height: 100%;
+
+}

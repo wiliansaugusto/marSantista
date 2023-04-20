@@ -1,19 +1,88 @@
-<div>
-    <ngb-carousel
-	*ngIf="images"
-	[showNavigationArrows]="showNavigationArrows"
-	[showNavigationIndicators]="showNavigationIndicators"
->
-	<ng-template ngbSlide *ngFor="let image of images">
-		<div class="picsum-img-wrapper">
-			<img [src]="image" alt="Random slide" />
+<div class="corpoHome">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<ngb-carousel>
+				<ng-template ngbSlide>
+					<div class="picsum-img-wrapper">
+						<div class="image1"></div>
+					</div>
+				</ng-template>
+				<ng-template ngbSlide>
+					<div class="picsum-img-wrapper">
+						<div class="image2"></div>
+					</div>
+				</ng-template>
+				<ng-template ngbSlide>
+					<div class="picsum-img-wrapper">
+						<div class="image3"></div>
+					</div>
+				</ng-template>
+			</ngb-carousel>
+			<h1 class="nameRestaurante">Restaurante Mar Santista</h1>
 		</div>
-		<div class="carousel-caption">
-			<h3>No mouse navigation</h3>
-			<p>This carousel hides navigation arrows and indicators.</p>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-lg-2"></div>
+		<div class="col-sm-12 col-lg-9">
+			<h2 class="subtitulo" id="home">Quem somos</h2>
+			<p>Somos um restaurante especializado em frutos do mar, temos um excelente
+				carta de vinhos, estamos localizados em frente ao mar que proporciona ao cliente
+				uma experiencia única, além de uma refeição maravilhosa você tem uma vista privilegiada para o mar.
+			</p>
+			<p>
+				Aqui você vai aproveitar a melhor Paella do litoral de São Paulo, os nossos produtos são todos
+				extremamente
+				frescos e de altíssima qualidade.
+			</p>
+			<p>
+				Os nossos frutos do mar são comprados de pescadores locais, assim garantimos um produto extremamente
+				fresco.
+			</p>
+			<div class="col-sm-12 col-lg-1">
+
+			</div>
 		</div>
-	</ng-template>
-</ngb-carousel>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-lg-2"></div>
+		<div class="col-sm-12 col-lg-9">
+			<h2 class="subtitulo" id="equipe">Nossa Equipe</h2>
+			<img src="../../../assets/img/tiro-medio-de-pessoas-cozinhando-juntas.jpg" alt=""
+				class="img-fluid imgSite img-thumbnail">
+			<p>Nossa equipe é formada por profissionais altamente qualificados, que estão à disposição de atender a
+				todos os nossos clientes com excelência e cordialidade.</p>
+			<p>Os chefes são formados em renomadas escolas de culinária e tem experiência com os melhores chefes do
+				mundo</p>
+
+
+			<p></p>
+			<div class="col-sm-12 col-lg-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-lg-2"></div>
+			<div class="col-sm-12 col-lg-9 cardapioDiv">
+				<h2 class="subtitulo" id="cardapio">Cardápio</h2>
+				<img class="cardapio img-fluid" src="../../../assets/img/caradapioModelo.jpg"
+					alt="Cardápio Restaurante Mar Santista">
+				<p>Se desejar conhecer o nosso cardápio clique no botão</p>
+
+				<button class="btnMapa" mat-stroked-button><a href="../../../assets/img/caradapioModelo.jpg"
+						target="_blank" rel="noopener noreferrer" download>Baixar Cardapio</a></button>
+
+			</div>
+			<div class="col-sm-12 col-lg-1"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-lg-2"></div>
+		<div class="col-sm-12 col-lg-9 cardapioDiv" id="endereco">
+			<iframe class="mapa"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.733942899673!2d-46.335737523769325!3d-23.96984657672801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0304b737d3ef%3A0xcf636c83b06c89ef!2sPra%C3%A7a%20das%20Bandeiras!5e0!3m2!1spt-BR!2sbr!4v1682012401729!5m2!1spt-BR!2sbr"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<h2 class="endereco">Endereço</h2>
+			<p>Praça das Bandeiras s/n Santos - SP</p>
+		</div>
+		<div class="col-sm-12 col-lg-1"></div>
+	</div>
 </div>
-
-

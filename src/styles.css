@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; width: 100%; }
+body {margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    overflow-x: hidden;
+}
+*{
+    --main-bg-color-dourado:#DAA520;
+    --main-bg-green: #2F4F4F;
+    --main-bg-champanhe:#FAEBD7;
+    --font-subtitle:'Cormorant Garamond';
+    --font-p:"Montserrat";
+  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Tilt+Prism&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=Secular+One&display=swap');

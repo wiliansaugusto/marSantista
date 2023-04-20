@@ -1,5 +1,149 @@
-div{
+.corpoHome {
+    background-color: var(--main-bg-green);
+}
+
+.nameRestaurante {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 15px;
+    text-shadow: 1px 2px 1px black;
+    box-shadow: 10px 5px 5px rgb(248, 248, 248);
+    color: black;
+}
+
+.image1 {
+    background-image: url("../../../assets/img/imagem1.jpg");
+    min-height: 85vh;
+    min-width: 100vw;
+    background-size: 100vw, 85vh;
+    background-repeat: no-repeat;
+}
+
+.image2 {
+    background-image: url("../../../assets/img/imagem2.jpg");
+    min-height: 85vh;
+    min-width: 100vw;
+    background-size: 100vw, 85vh;
+    background-repeat: no-repeat;
+
+
+}
+
+.image3 {
+    background-image: url("../../../assets/img/imagem3.jpg");
+    min-height: 85vh;
+    min-width: 100vw;
+    background-size: 100vw, 85vh;
+    background-repeat: no-repeat;
+
+}
+
+.imgSite {
+    text-align: center;
+    max-width: 20vw;
+    padding: 10px;
+    position: relative;
+    left: 25%;
+    margin-bottom: 15px;
+}
+
+
+.cardapioDiv {
     display: flex;
-    flex-direction: row;
-    width: 33%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cardapio {
+    max-width: 100%;
+    transition: ease-in-out 0.2s;
+
+}
+
+.cardapio:hover {
+    max-width: 100%;
+    transform: scale(1.3);
+    object-fit: cover;
+    z-index: 5;
+
+}
+
+.row {
+    padding: 15px;
+}
+
+.subtitulo {
+    font-family: var(--font-subtitle);
+    font-weight: bolder;
+    padding: 10px;
+    color: var(--main-bg-champanhe);
+}
+
+p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-top: 0.1875rem;
+    margin-top: 0.1875rem;
+    font-family: var(--font-p);
+    color: whitesmoke;
+}
+
+.endereco {
+    font-family: var(--font-subtitle);
+    color: var(--main-bg-champanhe);
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.mapa {
+    width: 100%;
+    height: 500px;
+}
+
+.btnMapa {
+    background-color: var(--main-bg-color-dourado);
+}
+
+.btnMapa a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+    .nameRestaurante {
+        left: 2%;
+        top: 35%;
+
+    }
+
+    .image1 {
+        min-height: 33vh;
+        min-width: 100vw
+    }
+
+    .image2 {
+        max-width: 90vh;
+        min-height: 33vh;
+
+    }
+
+    .image3 {
+        max-width: 90vh;
+        min-height: 33vh;
+    }
+
+    .cardapio:hover {
+        transform: none;
+
+    }
+
+    .imgSite {
+        left: 2px;
+        max-width: 80vw;
+    }
+
 }

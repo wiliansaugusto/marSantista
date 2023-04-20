@@ -1,10 +1,101 @@
-.imgLogo{
+mat-toolbar {
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    background-color: var(--main-bg-color-dourado);
+}
+
+.imgLogo {
     width: 130px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.btnMenu {
+    display: block;
+    position: absolute;
+    right: 5px;
+}
+
+.corpo {
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: var(--main-bg-color-dourado);
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: x-large;
+    color: var(--main-bg-champanhe);
+}
+
+.alerta {
+    margin-top: 15px;
+    background-color: darkred;
+    color: var(--main-bg-champanhe);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    max-height: 100px;
+    padding: 25px;
+    padding-top: 45px;
+
+}
+
+::ng-deep .mat-menu {
+    display: block;
+    position: relative;
+    right: 15px;
+    background-color: var(--main-bg-champanhe);
+}
+
+::ng-deep .linkMenu,
+.mat-icon {
+    color: var(--main-bg-green);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btnWhats {
+    display: flex;
+    position:fixed;
+    top: 75%;
+    height: 100px;
+    z-index: 2;
+}
+.btnWhats img{
+    width: auto;
     height: 100%;
 }
-mat-expansion-panel-header{
-    display: inline-block;
-    flex-direction: row;
-    height: 100%;
 
+
+@media screen and (max-width: 450px) {
+    mat-toolbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .alerta {
+        max-height: max-content;
+    }
+
+    footer {
+        max-height: auto;
+    }
+    .btnWhats img{
+        width: 50vw;
+        height: fit-content;
+            
+    }
 }

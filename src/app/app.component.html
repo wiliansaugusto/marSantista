@@ -1,26 +1,50 @@
-<nav>
-  <mat-accordion>
-    <mat-expansion-panel mullti>
-      <mat-expansion-panel-header>
-        <mat-panel-title> 
-        </mat-panel-title>
-        <mat-panel-description>
-          <img class="img-fluid imgLogo" src="../assets/img/logo.png" alt="Logo Mar Santista">
-        </mat-panel-description>     
-      </mat-expansion-panel-header>
-      <ul>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos debitis, dignissimos, ratione reiciendis odio, quo expedita ipsa fugit quisquam voluptatibus aperiam pariatur atque quia voluptas inventore veniam. Tenetur, eaque amet?</li>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos debitis, dignissimos, ratione reiciendis odio, quo expedita ipsa fugit quisquam voluptatibus aperiam pariatur atque quia voluptas inventore veniam. Tenetur, eaque amet?</li>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos debitis, dignissimos, ratione reiciendis odio, quo expedita ipsa fugit quisquam voluptatibus aperiam pariatur atque quia voluptas inventore veniam. Tenetur, eaque amet?</li>
-      </ul>
-    </mat-expansion-panel>
-   
-  </mat-accordion>
+<div>
+  <a class="btnWhats"
+    href="https://api.whatsapp.com/send?phone=5513997161619&text=Olá%20vim%20porque%20gostei%20do%20seu%20site%20de%20restaurante"
+    target="_blank">
+    <img src="../assets/img/whats.png" alt="Whatsapp botão ">
+  </a>
+</div>
+<div class="corpo">
+  <mat-toolbar>
+    <img class="imgLogo" src="../assets/img/logo.png" alt="imagem da logo do restaurante Mar Santista">
+    <span class="example-spacer"></span>
+    <button class="btnMenu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu class="mat-menu" #menu="matMenu">
 
-</nav>
-<main>
-<router-outlet></router-outlet>
-</main>
-<footer>
-  <p>Desenvolvido por <a href="http://sites.achei.digital" target="_blank" rel="noopener noreferrer">Achei Digital</a></p>
-</footer>
+      <a class="linkMenu" href="#home">
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          Home
+        </button></a>
+      <a class="linkMenu" href="#equipe">
+        <button mat-menu-item>
+          <mat-icon>diversity_3</mat-icon>
+          Equipe
+        </button></a>
+      <a class="linkMenu" href="#cardapio">
+        <button mat-menu-item>
+          <mat-icon>restaurant_menu</mat-icon>
+          Cardapio
+        </button></a>
+      <a class="linkMenu" href="#endereco">
+        <button mat-menu-item>
+          <mat-icon>signpost</mat-icon>
+          Endereço
+        </button></a>
+    </mat-menu>
+  </mat-toolbar>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="alerta">
+    <p>O site é só um modelo para divulgação o restaurante não existe</p>
+  </div>
+  <footer>
+    <p><a href="https://sites.achei.digital">Desenvolvido por Achei Digital</a></p>
+  </footer>
+
+</div>

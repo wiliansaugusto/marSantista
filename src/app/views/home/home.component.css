@@ -113,6 +113,13 @@ p {
     text-decoration: none;
 }
 
+.linkRota {
+    background-color: var(--main-bg-color-dourado);
+    font-family: var(--font-p);
+    color: var(--main-bg-champanhe);
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 450px) {
     .nameRestaurante {
         left: 2%;
